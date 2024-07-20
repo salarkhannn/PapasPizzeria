@@ -1,0 +1,72 @@
+# Node modules
+node_modules/
+
+# Build directories
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Dependency directories
+bower_components/
+
+# NPM package lock
+package-lock.json
+
+# Yarn lock
+yarn.lock
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Operating System files
+*.DS_Store
+*.Thumbs.db
+
+# Ignore specific files
+*.zip
+*.tar.gz
+*.rar
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# IDE-specific files #
+######################
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Other #
+##########
+*.log
+*.pid
+*.seed
+*.pid.lock

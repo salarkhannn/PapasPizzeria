@@ -1,0 +1,160 @@
+/* Dark Green = rgb(9, 32, 27); */
+/* Lighter Green = rgb(27, 119, 84); */
+/* Yellow = rgb(249, 177, 34) */
+/* orange = rgb(235, 92, 55); */
+/* beige = rgb(236, 223, 171); */
+
+html, body {
+    background-color: rgb(255, 249, 237);
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../fonts/NeueMontreal.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Magilio';
+    src: url('../fonts/Magilio.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('../fonts/Helvetica-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+*{
+    text-decoration: none;
+}
+
+.navbar{
+    padding-right: 15px;
+    padding-left: 15px;
+    background: none;
+
+    padding: 10px 0;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background-color: rgb(255, 240, 210);
+}
+
+.navdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-logo{
+    font-family: 'Magilio';  
+    color: rgb(9, 32, 27);
+    font-size: 30px;
+    letter-spacing: -0.05cap;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.navbar-logo:hover{
+    scale: 1.01;
+}
+
+.navbar-list{
+    gap: 20px;
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.navbar-button{
+    font-family: 'NeueMontreal';
+    color: rgb(9, 32, 27);
+    background: none;
+    cursor: pointer;
+    font-size: large;
+    padding-left:  10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.navbar-button:hover{
+    scale: 1.05;
+}
+
+.title-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-family: 'Magilio';
+    font-size: 200px;
+    letter-spacing: 0cap;
+    margin-bottom: 0px;
+    color: rgb(9, 32, 27);
+}
+
+.img-container{
+    position: relative;
+}
+
+.roy-image{
+    position: fixed;
+    transform: scalex(-1);
+    bottom: -20px;
+    left: -20px;
+    width: 250px;
+    height: auto;
+    z-index: 2000;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.roy-image:hover{
+    transform: scaleX(-1) scale(1.125) rotateZ(-10deg);
+}
+
+.papa-image{
+    position: fixed;
+    bottom: -20px;
+    right: -20px;
+    width: 300px;
+    height: auto;
+    z-index: 2000;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.papa-image:hover{
+    transform: scale(1.125) rotateZ(-10deg);
+}
